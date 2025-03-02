@@ -50,7 +50,7 @@ startBtn.addEventListener('click', () => {
                 title: 'Success',
                 message: 'Countdown finished',
             });
-            timePicker.disabled = true;
+            timePicker.disabled = false;
         }
         else {
             const { days, hours, minutes, seconds } = convertMs(timeLeft);
