@@ -16,3 +16,80 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 40px 160px;
+}
+
+ul{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 4%;
+}
+
+#datetime-picker{
+  width: 272px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+.timer-btn{
+  width: 75px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #4e75ff;
+  font-weight: 500;  
+  line-height: 24px;
+  letter-spacing: 4%;
+}
+
+.timer-btn:hover {
+  background-color: #6c8cff;
+}
+
+.timer-btn:disabled{
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.wrap{
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.timer{
+  width: 346px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value{
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.label{
+  font-size: 16px;
+  font-weight: 400px;
+  text-transform: uppercase;
+}
