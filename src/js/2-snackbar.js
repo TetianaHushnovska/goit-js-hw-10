@@ -25,11 +25,13 @@ document.querySelector('form').addEventListener('submit', event => {
 function createPromise(delay, state) {
   return new Promise((resolve, reject) => {
       setTimeout(() => {
-        console.log(`Promise ${state} in ${delay} ms`);
       if (state === 'fulfilled') {
         resolve(delay);
+        console.log(`✅ Fulfilled promise in ${delay}ms`);
+
       } else {
         reject(delay);
+        console.log(`❌ Rejected promise in ${delay}ms`);
       }
     }, delay);
   });
