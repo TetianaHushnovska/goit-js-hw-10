@@ -27,11 +27,9 @@ function createPromise(delay, state) {
       setTimeout(() => {
       if (state === 'fulfilled') {
         resolve(delay);
-        console.log(`✅ Fulfilled promise in ${delay}ms`);
 
       } else {
         reject(delay);
-        console.log(`❌ Rejected promise in ${delay}ms`);
       }
     }, delay);
   });
